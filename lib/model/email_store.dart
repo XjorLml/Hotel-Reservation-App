@@ -18,43 +18,43 @@ class EmailStore with ChangeNotifier {
 
   static final _mainInbox = <Email>{
     const Email(
-      sender: 'Google Express',
-      time: '15 minutes ago',
-      subject: 'Package shipped!',
-      message: 'Cucumber Mask Facial has shipped.\n\n'
+      sender: 'Ratings',
+      time: '10/10',
+      subject: "Shangri-La's Boracay Resort and Spa",
+      message: 'Boracay Island, Malay, Aklan.\n\n'
           'Keep an eye out for a package to arrive between this Thursday and next Tuesday. If for any reason you don\'t receive your package before the end of next week, please reach out to us for details on your shipment.\n\n'
           'As always, thank you for shopping with us and we hope you love our specially formulated Cucumber Mask!',
       avatar: '$_avatarsLocation/avatar_express.png',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
     const Email(
-      sender: 'Ali Connors',
-      time: '4 hrs ago',
-      subject: 'Brunch this weekend?',
-      message:
+      sender: 'Ratings',
+      time: '9/10',
+      subject: 'Amanpulo',
+      message: 'Pamalican Island, Palawan'
           'I\'ll be in your neighborhood doing errands and was hoping to catch you for a coffee this Saturday. If you don\'t have anything scheduled, it would be great to see you! It feels like its been forever.\n\n'
           'If we do get a chance to get together, remind me to tell you about Kim. She stopped over at the house to say hey to the kids and told me all about her trip to Mexico.\n\n'
           'Talk to you soon,\n\n'
           'Ali',
       avatar: '$_avatarsLocation/avatar_5.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
     const Email(
-      sender: 'Allison Trabucco',
-      time: '5 hrs ago',
-      subject: 'Bonjour from Paris',
-      message: 'Here are some great shots from my trip...',
+      sender: 'Ratings',
+      time: '8/10',
+      subject: 'The Peninsula Manila',
+      message: 'Ayala Avenue, Makati City',
       avatar: '$_avatarsLocation/avatar_3.jpg',
       recipients: 'Jeff',
       containsPictures: true,
     ),
     const Email(
-      sender: 'Trevor Hansen',
-      time: '9 hrs ago',
-      subject: 'Brazil trip',
-      message:
+      sender: 'Ratings',
+      time: '8/10',
+      subject: 'El Nido Resorts - Pangulasian Island',
+      message: 'Pangulasian Island, Palawan'
           'Thought we might be able to go over some details about our upcoming vacation.\n\n'
           'I\'ve been doing a bit of research and have come across a few paces in Northern Brazil that I think we should check out. '
           'One, the north has some of the most predictable wind on the planet. '
@@ -64,21 +64,21 @@ class EmailStore with ChangeNotifier {
           'Maybe we can jump on the phone later today if you have a second.',
       avatar: '$_avatarsLocation/avatar_8.jpg',
       recipients: 'Allison, Kim, Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
     const Email(
-      sender: 'Frank Hawkins',
-      time: '10 hrs ago',
-      subject: 'Update to Your Itinerary',
-      message: '',
+      sender: 'Ratings',
+      time: '7/10',
+      subject: 'Crimson Resort and Spa Mactan',
+      message: 'Seascapes Resort Town, Mactan Island, Cebu',
       avatar: '$_avatarsLocation/avatar_4.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
     const Email(
-      sender: 'Google Express',
-      time: '12 hrs ago',
-      subject: 'Delivered',
+      sender: 'Ratings',
+      time: '7/10',
+      subject: 'The Bellevue Manila',
       message: 'Your shoes should be waiting for you at home!',
       avatar: '$_avatarsLocation/avatar_express.png',
       recipients: 'Jeff',
@@ -99,7 +99,7 @@ class EmailStore with ChangeNotifier {
           'If you can make it, we\'re doing a little phone-tree party at her place next Saturday, hoping that if we can find one person, thee more will...',
       avatar: '$_avatarsLocation/avatar_7.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
     const Email(
       sender: 'Sandra Adams',
@@ -110,7 +110,7 @@ class EmailStore with ChangeNotifier {
           'very quick to put together.',
       avatar: '$_avatarsLocation/avatar_2.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
   };
 
@@ -124,7 +124,7 @@ class EmailStore with ChangeNotifier {
           'Your alpha testers will be automatically notified. If you\'d rather send them a link directly, go to your Google Play Console and follow the instructions for obtaining an open alpha testing link.',
       avatar: '$_avatarsLocation/avatar_4.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
     const Email(
       sender: 'Allison Trabucco',
@@ -135,7 +135,7 @@ class EmailStore with ChangeNotifier {
           'Whether you\'re an experienced hiker or just looking to get outside for the afternoon, there\'s a segment that suits you.',
       avatar: '$_avatarsLocation/avatar_3.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
   };
 
@@ -148,7 +148,7 @@ class EmailStore with ChangeNotifier {
           'You\'ve been selected as a winner in our latest raffle! To claim your prize, click on the link.',
       avatar: '$_avatarsLocation/avatar_3.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
   };
 
@@ -161,7 +161,7 @@ class EmailStore with ChangeNotifier {
           'Wanted to email and see what you thought of',
       avatar: '$_avatarsLocation/avatar_2.jpg',
       recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
     ),
   };
 

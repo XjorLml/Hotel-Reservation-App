@@ -94,20 +94,20 @@ class _MailViewHeader extends StatelessWidget {
               children: [
                 Text('${email.sender} - ${email.time}'),
                 const SizedBox(height: 4),
-                Text(
-                  'To ${email.recipients},',
-                  style: textTheme.bodySmall!.copyWith(
-                    color: Theme.of(context)
-                        .colorScheme
-                        .onSurface
-                        .withOpacity(0.64),
-                  ),
-                ),
+                // Text(
+                //   'To ${email.recipients},',
+                //   style: textTheme.bodySmall!.copyWith(
+                //     color: Theme.of(context)
+                //         .colorScheme
+                //         .onSurface
+                //         .withOpacity(0.64),
+                //   ),
+                // ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsetsDirectional.only(end: 4),
-              child: ProfileAvatar(avatar: email.avatar),
+            const Padding(
+              padding: EdgeInsetsDirectional.only(end: 4),
+              // child: ProfileAvatar(avatar: email.avatar),
             ),
           ],
         ),
