@@ -11,7 +11,7 @@ class ComposePage extends StatelessWidget {
     var senderEmail = 'flutterfan@gmail.com';
     var subject = '';
     var recipient = 'Recipient';
-    var recipientAvatar = 'reply/avatars/avatar_0.jpg';
+    // var recipientAvatar = 'reply/avatars/avatar_0.jpg';
 
     final emailStore = Provider.of<EmailStore>(context);
 
@@ -20,7 +20,7 @@ class ComposePage extends StatelessWidget {
           .elementAt(emailStore.currentlySelectedEmailId);
       subject = currentEmail.subject;
       recipient = currentEmail.sender;
-      recipientAvatar = currentEmail.avatar;
+      // recipientAvatar = currentEmail.avatar;
     }
 
     return Scaffold(
@@ -43,10 +43,10 @@ class ComposePage extends StatelessWidget {
                     senderEmail: senderEmail,
                   ),
                   const _SectionDivider(),
-                  _RecipientsRow(
-                    recipients: recipient,
-                    avatar: recipientAvatar,
-                  ),
+                  // _RecipientsRow(
+                  //   recipients: recipient,
+                  //   avatar: recipientAvatar,
+                  // ),
                   const _SectionDivider(),
                   Padding(
                     padding: const EdgeInsets.all(12),

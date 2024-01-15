@@ -22,23 +22,19 @@ class EmailStore with ChangeNotifier {
       time: '10/10',
       subject: "Shangri-La's Boracay Resort and Spa",
       message: 'Boracay Island, Malay, Aklan.\n\n'
-          'Keep an eye out for a package to arrive between this Thursday and next Tuesday. If for any reason you don\'t receive your package before the end of next week, please reach out to us for details on your shipment.\n\n'
-          'As always, thank you for shopping with us and we hope you love our specially formulated Cucumber Mask!',
-      avatar: '$_avatarsLocation/avatar_express.png',
-      recipients: 'Jeff',
+          "Nestled on the pristine shores of Boracay's White Beach, Shangri-La's Boracay Resort and Spa epitomizes luxury and natural beauty. Exclusive villas and suites offer breathtaking ocean views. World-class dining, a rejuvenating CHI, The Spa, and a range of water sports create a tropical paradise experience. The serene ambiance and exceptional service make it an ideal haven.",
+      // avatar: '$_avatarsLocation/avatar_express.png',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
     const Email(
       sender: 'Ratings',
       time: '9/10',
       subject: 'Amanpulo',
-      message: 'Pamalican Island, Palawan'
-          'I\'ll be in your neighborhood doing errands and was hoping to catch you for a coffee this Saturday. If you don\'t have anything scheduled, it would be great to see you! It feels like its been forever.\n\n'
-          'If we do get a chance to get together, remind me to tell you about Kim. She stopped over at the house to say hey to the kids and told me all about her trip to Mexico.\n\n'
-          'Talk to you soon,\n\n'
-          'Ali',
-      avatar: '$_avatarsLocation/avatar_5.jpg',
-      recipients: 'Jeff',
+      message: 'Pamalican Island, Palawan\n\n'
+          "Amanpulo stands as a secluded masterpiece on Palawan's Pamalican Island. Luxurious casitas and villas provide privacy and awe-inspiring views of the Sulu Sea. Amanpulo offers an unparalleled escape with a private white-sand beach, world-class spa treatments, and exquisite dining experiences, ensuring a truly rejuvenating retreat.",
+      // avatar: '$_avatarsLocation/avatar_5.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
     const Email(
@@ -46,24 +42,18 @@ class EmailStore with ChangeNotifier {
       time: '8/10',
       subject: 'The Peninsula Manila',
       message: 'Ayala Avenue, Makati City',
-      avatar: '$_avatarsLocation/avatar_3.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_3.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
     const Email(
       sender: 'Ratings',
       time: '8/10',
       subject: 'El Nido Resorts - Pangulasian Island',
-      message: 'Pangulasian Island, Palawan'
-          'Thought we might be able to go over some details about our upcoming vacation.\n\n'
-          'I\'ve been doing a bit of research and have come across a few paces in Northern Brazil that I think we should check out. '
-          'One, the north has some of the most predictable wind on the planet. '
-          'I\'d love to get out on the ocean and kitesurf for a couple of days if we\'re going to be anywhere near or around Taiba. '
-          'I hear it\'s beautiful there and if you\'re up for it, I\'d love to go. Other than that, I haven\'t spent too much time looking into places along our road trip route. '
-          'I\'m assuming we can find places to stay and things to do as we drive and find places we think look interesting. But... I know you\'re more of a planner, so if you have ideas or places in mind, lets jot some ideas down!\n\n'
-          'Maybe we can jump on the phone later today if you have a second.',
-      avatar: '$_avatarsLocation/avatar_8.jpg',
-      recipients: 'Allison, Kim, Jeff',
+      message: 'Pangulasian Island, Palawan\n\n'
+          "Situated in the heart of Makati City, The Peninsula Manila is an iconic five-star hotel renowned for its timeless elegance and impeccable service. Opulent rooms and suites, award-winning dining at Old Manila, a state-of-the-art spa, and a stunning outdoor swimming pool define luxury. Its strategic location offers easy access to premier shopping destinations and business districts.",
+      // avatar: '$_avatarsLocation/avatar_8.jpg',
+      // recipients: 'Allison, Kim, Jeff',
       containsPictures: true,
     ),
     const Email(
@@ -71,8 +61,8 @@ class EmailStore with ChangeNotifier {
       time: '7/10',
       subject: 'Crimson Resort and Spa Mactan',
       message: 'Seascapes Resort Town, Mactan Island, Cebu',
-      avatar: '$_avatarsLocation/avatar_4.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_4.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
     const Email(
@@ -80,8 +70,8 @@ class EmailStore with ChangeNotifier {
       time: '7/10',
       subject: 'The Bellevue Manila',
       message: 'Your shoes should be waiting for you at home!',
-      avatar: '$_avatarsLocation/avatar_express.png',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_express.png',
+      // recipients: 'Jeff',
       containsPictures: false,
     ),
   };
@@ -97,8 +87,8 @@ class EmailStore with ChangeNotifier {
           'Hi friends,\n\nI was at the grocery store on Sunday night.. when I ran into Genie Williams! I almost didn\'t recognize her afer 20 years!\n\n'
           'Anyway, it turns out she is on the organizing committee for the high school reunion this fall. I don\'t know if you were planning on going or not, but she could definitely use our help in trying to track down lots of missing alums. '
           'If you can make it, we\'re doing a little phone-tree party at her place next Saturday, hoping that if we can find one person, thee more will...',
-      avatar: '$_avatarsLocation/avatar_7.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_7.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
     const Email(
@@ -108,8 +98,8 @@ class EmailStore with ChangeNotifier {
       message:
           'Raspberry Pie: We should make this pie recipe tonight! The filling is '
           'very quick to put together.',
-      avatar: '$_avatarsLocation/avatar_2.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_2.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
   };
@@ -122,8 +112,8 @@ class EmailStore with ChangeNotifier {
       message:
           'Your update is now live on the Play Store and available for your alpha users to start testing.\n\n'
           'Your alpha testers will be automatically notified. If you\'d rather send them a link directly, go to your Google Play Console and follow the instructions for obtaining an open alpha testing link.',
-      avatar: '$_avatarsLocation/avatar_4.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_4.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
     const Email(
@@ -133,8 +123,8 @@ class EmailStore with ChangeNotifier {
       message:
           'Looking for the best hiking trails in your area? TrailGo gets you on the path to the outdoors faster than you can pack a sandwich.\n\n'
           'Whether you\'re an experienced hiker or just looking to get outside for the afternoon, there\'s a segment that suits you.',
-      avatar: '$_avatarsLocation/avatar_3.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_3.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
   };
@@ -146,8 +136,8 @@ class EmailStore with ChangeNotifier {
       subject: 'Free money',
       message:
           'You\'ve been selected as a winner in our latest raffle! To claim your prize, click on the link.',
-      avatar: '$_avatarsLocation/avatar_3.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_3.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
   };
@@ -159,8 +149,8 @@ class EmailStore with ChangeNotifier {
       subject: '(No subject)',
       message: 'Hey,\n\n'
           'Wanted to email and see what you thought of',
-      avatar: '$_avatarsLocation/avatar_2.jpg',
-      recipients: 'Jeff',
+      // avatar: '$_avatarsLocation/avatar_2.jpg',
+      // recipients: 'Jeff',
       containsPictures: true,
     ),
   };

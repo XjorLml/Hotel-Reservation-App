@@ -4,8 +4,8 @@ class Email {
     required this.time,
     required this.subject,
     required this.message,
-    required this.avatar,
-    required this.recipients,
+    // required this.avatar,
+    // required this.recipients,
     required this.containsPictures,
   });
 
@@ -13,7 +13,7 @@ class Email {
   final String time;
   final String subject;
   final String message;
-  final String avatar;
-  final String recipients;
+  // final String avatar;
+  // final String recipients;
   final bool containsPictures;
 }
