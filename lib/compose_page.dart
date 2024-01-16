@@ -10,7 +10,7 @@ class ComposePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var senderEmail = 'flutterfan@gmail.com';
     var subject = '';
-    var recipient = 'Recipient';
+    //var recipient = 'Recipient';
     // var recipientAvatar = 'reply/avatars/avatar_0.jpg';
 
     final emailStore = Provider.of<EmailStore>(context);
@@ -19,7 +19,7 @@ class ComposePage extends StatelessWidget {
       final currentEmail = emailStore.emails[emailStore.currentlySelectedInbox]!
           .elementAt(emailStore.currentlySelectedEmailId);
       subject = currentEmail.subject;
-      recipient = currentEmail.sender;
+      //recipient = currentEmail.sender;
       // recipientAvatar = currentEmail.avatar;
     }
 
@@ -220,6 +220,7 @@ class __SenderAddressRowState extends State<_SenderAddressRow> {
   }
 }
 
+// ignore: unused_element
 class _RecipientsRow extends StatelessWidget {
   const _RecipientsRow({
     required this.recipients,
