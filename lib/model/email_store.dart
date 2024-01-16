@@ -26,6 +26,17 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_express.png',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [
+        // 'http://surl.li/pizes',
+        // 'http://surl.li/pizfh',
+        // 'http://surl.li/pizft',
+        // 'http://surl.li/pizgv',
+        'images/shangrila/shangrila1.jpg',
+        'images/shangrila/shangrila2.jpg',
+        'images/shangrila/shangrila3.jpg',
+        'images/shangrila/shangrila4.jpg'
+        
+      ],
     ),
     const Email(
       sender: 'Ratings',
@@ -36,43 +47,69 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_5.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [
+        'images/amanpulo/amanpulo1.jpg',
+        'images/amanpulo/amanpulo2.jpg',
+        'images/amanpulo/amanpulo3.jpg',
+        'images/amanpulo/amanpulo4.jpg',
+        'images/amanpulo/amanpulo5.jpg',
+      
+      ],
     ),
     const Email(
       sender: 'Ratings',
       time: '8/10',
       subject: 'The Peninsula Manila',
-      message: 'Ayala Avenue, Makati City',
+      message: 'Ayala Avenue, Makati City'
+      "Located in the center of Makati City, The Peninsula Manila has set the benchmark for luxury and sophistication for over four decades. Known affectionately as the “Jewel in the Capital’s Crown” for its legendary presence in the heart of the Philippines’ primary business district, it is a luxurious haven of comfort, quality service and fine cuisine, and is as much a favorite with discerning locals as it is with visitors from overseas. For the second year, The Peninsula Manila is awarded the coveted Forbes Travel Guide Five-Star rating – the only hotel in the principal central business districts of Makati and Bonifacio Global City to receive the coveted ranking in the publisher’s annual announcement of the world’s finest luxury hotels.",
       // avatar: '$_avatarsLocation/avatar_3.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [
+        'images/peninsula/peninsula1.jpg',
+        'images/peninsula/peninsula2.jpg',
+        'images/peninsula/peninsula3.jpg',
+        'images/peninsula/peninsula4.jpg',
+        'images/peninsula/peninsula5.jpg',
+        'images/peninsula/peninsula6.jpg',
+      ],
     ),
     const Email(
       sender: 'Ratings',
       time: '8/10',
       subject: 'El Nido Resorts - Pangulasian Island',
       message: 'Pangulasian Island, Palawan\n\n'
-          "Situated in the heart of Makati City, The Peninsula Manila is an iconic five-star hotel renowned for its timeless elegance and impeccable service. Opulent rooms and suites, award-winning dining at Old Manila, a state-of-the-art spa, and a stunning outdoor swimming pool define luxury. Its strategic location offers easy access to premier shopping destinations and business districts.",
+          "Pangulasian Island is El Nido Resorts’ Eco-Luxury island resort in Bacuit Bay, El Nido. The resort is set fronting a pristine beach and against a backdrop of tropical forest. Also known as the “Island of the Sun”, Pangulasian has breathtaking views of both the sunrise and sunset. Frolic in the 750-meter stretch of white sand beach and be amazed by the marine sanctuary right at its doorstep. Discerning guests will be treated to luxurious amenities and impeccable and personalized service at Pangulasian Island. The resort offers a total of 42 deluxe accommodations built with contemporary Filipino and cutting edge “green” design.",
       // avatar: '$_avatarsLocation/avatar_8.jpg',
       // recipients: 'Allison, Kim, Jeff',
       containsPictures: true,
-    ),
-    const Email(
-      sender: 'Ratings',
-      time: '7/10',
-      subject: 'Crimson Resort and Spa Mactan',
-      message: 'Seascapes Resort Town, Mactan Island, Cebu',
-      // avatar: '$_avatarsLocation/avatar_4.jpg',
-      // recipients: 'Jeff',
-      containsPictures: true,
+      hotel1: [
+        'images/pangulasian/pangulasian1.jpg',
+        'images/pangulasian/pangulasian2.jpg',
+        'images/pangulasian/pangulasian3.jpg',
+        'images/pangulasian/pangulasian4.jpg',
+        'images/pangulasian/pangulasian5.jpg',
+        'images/pangulasian/pangulasian6.jpg',
+      ],
     ),
     const Email(
       sender: 'Ratings',
       time: '7/10',
       subject: 'The Bellevue Manila',
-      message: 'Your shoes should be waiting for you at home!',
+      message: ' Alabang, Muntinlupa,\n\n'
+      "You’ll find all you need here at The Bellevue Manila! Go on a gastronomic adventure with fantastic dining options, and work on your wellness with the hotel’s state-of-the-art facilities such as the spa, gym, and swimming pool. With excellent service, spacious and comfortable rooms, and top-notch facilities and amenities, this five-star hotel in Alabang promises a delightful experience for its valued guests.",
+      
       // avatar: '$_avatarsLocation/avatar_express.png',
       // recipients: 'Jeff',
-      containsPictures: false,
+      containsPictures: true,
+      hotel1: [
+        'images/bellevue/bellevue1.jpg',
+        'images/bellevue/bellevue2.jpg',
+        'images/bellevue/bellevue3.jpg',
+        'images/bellevue/bellevue4.jpg',
+        'images/bellevue/bellevue5.jpg',
+        'images/bellevue/bellevue6.jpg',
+      ],
     ),
   };
 
@@ -90,6 +127,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_7.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [],
     ),
     const Email(
       sender: 'Sandra Adams',
@@ -101,6 +139,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_2.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [],
     ),
   };
 
@@ -115,6 +154,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_4.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [],
     ),
     const Email(
       sender: 'Allison Trabucco',
@@ -126,6 +166,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_3.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [],
     ),
   };
 
@@ -139,6 +180,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_3.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [],
     ),
   };
 
@@ -152,6 +194,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_2.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
+      hotel1: [],
     ),
   };
 

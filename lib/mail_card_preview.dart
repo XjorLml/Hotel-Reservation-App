@@ -99,7 +99,7 @@ class MailPreviewCard extends StatelessWidget {
    ),
    child: mailPreview,
  ),
-);;
+);
   }
 }
 
@@ -252,14 +252,9 @@ class _MailPreview extends StatelessWidget {
                   ),
                 ),
                 if (email.containsPictures) ...[
-                  Flexible(
-                    fit: FlexFit.loose,
-                    child: Column(
-                      children: const [
-                        SizedBox(height: 20),
-                        _PicturePreview(),
-                      ],
-                    ),
+                  const SizedBox(height: 20),
+                  _PicturePreview(
+                    hotel1: email.hotel1,
                   ),
                 ],
               ],
@@ -272,22 +267,25 @@ class _MailPreview extends StatelessWidget {
 }
 
 class _PicturePreview extends StatelessWidget {
-  const _PicturePreview();
+  const _PicturePreview({
+    required this.hotel1,
+  });
+
+  final List<String> hotel1;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 96,
       child: ListView.builder(
-        itemCount: 4,
+        itemCount: hotel1.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsetsDirectional.only(end: 4),
             child: Image.asset(
-              'reply/attachments/paris_${index + 1}.jpg',
+              hotel1[index],
               gaplessPlayback: true,
-              package: 'flutter_gallery_assets',
             ),
           );
         },
