@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'package:carousel_slider/carousel_slider.dart';
 import 'model/email_model.dart';
 import 'model/email_store.dart';
 // import 'profile_avatar.dart';
 
 class MailViewPage extends StatelessWidget {
-  const MailViewPage({Key? key, required this.id, required this.email})
+  const MailViewPage({Key? key, 
+  required this.id, 
+  required this.email
+  }
+  )
       : super(key: key);
 
   final int id;
@@ -35,7 +39,9 @@ class MailViewPage extends StatelessWidget {
                   _MailViewBody(message: email.message),
                   if (email.containsPictures) ...[
                     const SizedBox(height: 28),
-                    const _PictureGrid(),
+                    CustomImageCarousel(
+                      imageUrls: email.hotelimage,
+                    ),
                   ],
                   const SizedBox(height: kToolbarHeight),
                 ],
@@ -130,28 +136,91 @@ class _MailViewBody extends StatelessWidget {
   }
 }
 
-class _PictureGrid extends StatelessWidget {
-  const _PictureGrid();
+// class _PictureGrid extends StatelessWidget {
+//   const _PictureGrid(
+//     {
+//       required this.hotelimage
+//     }
+//   );
+//   final List<String>hotelimage;
+//   @override
+//   Widget build(BuildContext context) {
+//     return GridView.builder(
+//       shrinkWrap: true,
+//       physics: const NeverScrollableScrollPhysics(),
+//       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+//         crossAxisCount: 2,
+//         crossAxisSpacing: 4,
+//         mainAxisSpacing: 4,
+//       ),
+//       itemCount: hotelimage.length,
+//       itemBuilder: (context, index) {
+//         return Image.asset(
+//           hotelimage[index],
+//           gaplessPlayback: true,
+//           // package: 'flutter_gallery_assets',
+//           fit: BoxFit.fill,
+//         );
+//       },
+//     );
+//   }
+// }
+
+class CustomImageCarousel extends StatefulWidget {
+  final List<String> imageUrls;
+
+  CustomImageCarousel({required this.imageUrls});
+
+  @override
+  _CustomImageCarouselState createState() => _CustomImageCarouselState();
+}
+
+class _CustomImageCarouselState extends State<CustomImageCarousel> {
+  int _currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 4,
-        mainAxisSpacing: 4,
-      ),
-      itemCount: 4,
-      itemBuilder: (context, index) {
-        return Image.asset(
-          'reply/attachments/paris_${index + 1}.jpg',
-          gaplessPlayback: true,
-          package: 'flutter_gallery_assets',
-          fit: BoxFit.fill,
-        );
-      },
+    return Column(
+      children: [
+        CarouselSlider(
+          items: widget.imageUrls.map((url) {
+            return Builder(
+              builder: (BuildContext context) {
+                return Image.asset(
+                  url,
+                  fit: BoxFit.cover,
+                );
+              },
+            );
+          }).toList(),
+          options: CarouselOptions(
+            height: 200.0,
+            autoPlay: true,
+            enlargeCenterPage: true,
+            onPageChanged: (index, reason) {
+              setState(() {
+                _currentIndex = index;
+              });
+            },
+          ),
+        ),
+        SizedBox(height: 10.0),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: widget.imageUrls.map((url) {
+            int index = widget.imageUrls.indexOf(url);
+            return Container(
+              width: 8.0,
+              height: 8.0,
+              margin: EdgeInsets.symmetric(horizontal: 5.0),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: _currentIndex == index ? Colors.blue : Colors.grey,
+              ),
+            );
+          }).toList(),
+        ),
+      ],
     );
   }
 }
