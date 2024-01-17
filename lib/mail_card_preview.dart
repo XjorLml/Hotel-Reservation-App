@@ -6,7 +6,6 @@ import 'colors.dart';
 import 'mail_view_page.dart';
 import 'model/email_model.dart';
 import 'model/email_store.dart';
-import 'profile_avatar.dart';
 import 'package:animations/animations.dart';
 
 class MailPreviewCard extends StatelessWidget {
@@ -232,12 +231,6 @@ class _MailPreview extends StatelessWidget {
                         ],
                       ),
                     ),
-                    // _MailPreviewActionBar(
-                    //   avatar: email.avatar,
-                    //   isStarred: emailStore.isEmailStarred(email),
-                    //   onStar: onStar,
-                    //   onDelete: onDelete,
-                    // ),
                   ],
                 ),
                 Padding(
@@ -294,25 +287,3 @@ class _PicturePreview extends StatelessWidget {
   }
 }
 
-class _MailPreviewActionBar extends StatelessWidget {
-  const _MailPreviewActionBar({
-    required this.avatar,
-    required this.isStarred,
-    this.onStar,
-    this.onDelete,
-  });
-
-  final String avatar;
-  final bool isStarred;
-  final VoidCallback? onStar;
-  final VoidCallback? onDelete;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        ProfileAvatar(avatar: avatar),
-      ],
-    );
-  }
-}

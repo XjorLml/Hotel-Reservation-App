@@ -40,35 +40,22 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
   final _bottomDrawerKey = GlobalKey(debugLabel: 'Bottom Drawer');
   final _navigationDestinations = const <_Destination>[
     _Destination(
-      name: 'Inbox',
+      name: 'Home',
       icon: '$_iconAssetLocation/twotone_inbox.png',
       index: 0,
     ),
     _Destination(
-      name: 'Starred',
+      name: 'Favorites',
       icon: '$_iconAssetLocation/twotone_star.png',
       index: 1,
     ),
-    _Destination(
-      name: 'Sent',
-      icon: '$_iconAssetLocation/twotone_send.png',
-      index: 2,
-    ),
+   
     _Destination(
       name: 'Trash',
       icon: '$_iconAssetLocation/twotone_delete.png',
       index: 3,
     ),
-    _Destination(
-      name: 'Spam',
-      icon: '$_iconAssetLocation/twotone_error.png',
-      index: 4,
-    ),
-    _Destination(
-      name: 'Drafts',
-      icon: '$_iconAssetLocation/twotone_drafts.png',
-      index: 5,
-    ),
+   
   ];
 
   final _folders = <String, String>{

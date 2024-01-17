@@ -56,6 +56,7 @@ flutter:
     - images/peninsula/
     - images/pangulasian/
     - images/bellevue/
+    - images/homeicon/
     - packages/flutter_gallery_assets/fonts/google_fonts/WorkSans-Regular.ttf
     - packages/flutter_gallery_assets/fonts/google_fonts/WorkSans-Medium.ttf
     - packages/flutter_gallery_assets/fonts/google_fonts/WorkSans-Bold.ttf
@@ -89,6 +90,7 @@ flutter:
     - packages/flutter_gallery_assets/reply/icons/twotone_star.png
     - packages/flutter_gallery_assets/reply/icons/twotone_stars.png
     - packages/flutter_gallery_assets/reply/reply_logo.png
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
