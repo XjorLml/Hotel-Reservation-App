@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'colors.dart';
-import 'home.dart';
+// import 'home.dart';
 import 'mail_view_page.dart';
 import 'model/email_model.dart';
 import 'model/email_store.dart';
@@ -99,7 +99,7 @@ class MailPreviewCard extends StatelessWidget {
    ),
    child: mailPreview,
  ),
-);;
+);
   }
 }
 
@@ -252,14 +252,9 @@ class _MailPreview extends StatelessWidget {
                   ),
                 ),
                 if (email.containsPictures) ...[
-                  Flexible(
-                    fit: FlexFit.loose,
-                    child: Column(
-                      children: const [
-                        SizedBox(height: 20),
-                        _PicturePreview(),
-                      ],
-                    ),
+                  const SizedBox(height: 20),
+                  _PicturePreview(
+                   hotelimage: email.hotelimage,
                   ),
                 ],
               ],
@@ -270,24 +265,27 @@ class _MailPreview extends StatelessWidget {
     );
   }
 }
-
+//displays image in mail preview class if containsPicture = true
 class _PicturePreview extends StatelessWidget {
-  const _PicturePreview();
+  const _PicturePreview({
+    required this.hotelimage,
+  });
+
+  final List<String>hotelimage;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 96,
       child: ListView.builder(
-        itemCount: 4,
+        itemCount:hotelimage.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsetsDirectional.only(end: 4),
             child: Image.asset(
-              'reply/attachments/paris_${index + 1}.jpg',
+             hotelimage[index], //image source
               gaplessPlayback: true,
-              package: 'flutter_gallery_assets',
             ),
           );
         },
