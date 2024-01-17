@@ -254,7 +254,7 @@ class _MailPreview extends StatelessWidget {
                 if (email.containsPictures) ...[
                   const SizedBox(height: 20),
                   _PicturePreview(
-                    hotel1: email.hotel1,
+                   hotelimage: email.hotelimage,
                   ),
                 ],
               ],
@@ -265,26 +265,26 @@ class _MailPreview extends StatelessWidget {
     );
   }
 }
-
+//displays image in mail preview class if containsPicture = true
 class _PicturePreview extends StatelessWidget {
   const _PicturePreview({
-    required this.hotel1,
+    required this.hotelimage,
   });
 
-  final List<String> hotel1;
+  final List<String>hotelimage;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 96,
       child: ListView.builder(
-        itemCount: hotel1.length,
+        itemCount:hotelimage.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsetsDirectional.only(end: 4),
             child: Image.asset(
-              hotel1[index],
+             hotelimage[index], //image source
               gaplessPlayback: true,
             ),
           );

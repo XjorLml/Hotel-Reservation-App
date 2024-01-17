@@ -45,7 +45,7 @@ class ReplyAppState extends State<ReplyApp> {
               routeInformationParser: _routeInformationParser,
               routerDelegate: _routerDelegate,
               themeMode: themeMode,
-              title: 'Reply',
+              title: 'Hotel Reservation',
               darkTheme: _buildReplyDarkTheme(context),
               theme: _buildReplyLightTheme(context),
             );

@@ -26,7 +26,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_express.png',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [
+     hotelimage: [
         // 'http://surl.li/pizes',
         // 'http://surl.li/pizfh',
         // 'http://surl.li/pizft',
@@ -47,7 +47,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_5.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [
+     hotelimage: [
         'images/amanpulo/amanpulo1.jpg',
         'images/amanpulo/amanpulo2.jpg',
         'images/amanpulo/amanpulo3.jpg',
@@ -65,7 +65,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_3.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [
+     hotelimage: [
         'images/peninsula/peninsula1.jpg',
         'images/peninsula/peninsula2.jpg',
         'images/peninsula/peninsula3.jpg',
@@ -83,7 +83,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_8.jpg',
       // recipients: 'Allison, Kim, Jeff',
       containsPictures: true,
-      hotel1: [
+     hotelimage: [
         'images/pangulasian/pangulasian1.jpg',
         'images/pangulasian/pangulasian2.jpg',
         'images/pangulasian/pangulasian3.jpg',
@@ -102,7 +102,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_express.png',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [
+     hotelimage: [
         'images/bellevue/bellevue1.jpg',
         'images/bellevue/bellevue2.jpg',
         'images/bellevue/bellevue3.jpg',
@@ -127,7 +127,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_7.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [],
+     hotelimage: [],
     ),
     const Email(
       sender: 'Sandra Adams',
@@ -139,7 +139,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_2.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [],
+     hotelimage: [],
     ),
   };
 
@@ -154,7 +154,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_4.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [],
+     hotelimage: [],
     ),
     const Email(
       sender: 'Allison Trabucco',
@@ -166,7 +166,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_3.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [],
+     hotelimage: [],
     ),
   };
 
@@ -180,7 +180,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_3.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [],
+     hotelimage: [],
     ),
   };
 
@@ -194,7 +194,7 @@ class EmailStore with ChangeNotifier {
       // avatar: '$_avatarsLocation/avatar_2.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
-      hotel1: [],
+     hotelimage: [],
     ),
   };
 

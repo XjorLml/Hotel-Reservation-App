@@ -7,7 +7,7 @@ class Email {
     // required this.avatar,
     // required this.recipients,
     required this.containsPictures,
-    required this.hotel1,
+    required this.hotelimage,
   });
 
   final String sender;
@@ -17,5 +17,5 @@ class Email {
   // final String avatar;
   // final String recipients;
   final bool containsPictures;
-  final List<String> hotel1;
+  final List<String>hotelimage;
 }
