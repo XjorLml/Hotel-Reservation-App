@@ -8,12 +8,12 @@ const _avatarsLocation = 'reply/avatars';
 
 class EmailStore with ChangeNotifier {
   final _categories = <String, Set<Email>>{
-    'Inbox': _mainInbox,
-    'Starred': _starredInbox,
-    'Sent': _outbox,
+    'Home': _mainInbox,
+    'Favorites': _starredInbox,
+    //'Sent': _outbox,
     'Trash': _trash,
-    'Spam': _spam,
-    'Drafts': _drafts,
+    // 'Spam': _spam,
+    // 'Drafts': _drafts,
   };
 
   static final _mainInbox = <Email>{
@@ -115,34 +115,6 @@ class EmailStore with ChangeNotifier {
 
   static final _starredInbox = <Email>{};
 
-  static final _outbox = <Email>{
-    const Email(
-      sender: 'Kim Alen',
-      time: '4 hrs ago',
-      subject: 'High school reunion?',
-      message:
-          'Hi friends,\n\nI was at the grocery store on Sunday night.. when I ran into Genie Williams! I almost didn\'t recognize her afer 20 years!\n\n'
-          'Anyway, it turns out she is on the organizing committee for the high school reunion this fall. I don\'t know if you were planning on going or not, but she could definitely use our help in trying to track down lots of missing alums. '
-          'If you can make it, we\'re doing a little phone-tree party at her place next Saturday, hoping that if we can find one person, thee more will...',
-      // avatar: '$_avatarsLocation/avatar_7.jpg',
-      // recipients: 'Jeff',
-      containsPictures: true,
-     hotelimage: [],
-    ),
-    const Email(
-      sender: 'Sandra Adams',
-      time: '7 hrs ago',
-      subject: 'Recipe to try',
-      message:
-          'Raspberry Pie: We should make this pie recipe tonight! The filling is '
-          'very quick to put together.',
-      // avatar: '$_avatarsLocation/avatar_2.jpg',
-      // recipients: 'Jeff',
-      containsPictures: true,
-     hotelimage: [],
-    ),
-  };
-
   static final _trash = <Email>{
     const Email(
       sender: 'Frank Hawkins',
@@ -170,36 +142,8 @@ class EmailStore with ChangeNotifier {
     ),
   };
 
-  static final _spam = <Email>{
-    const Email(
-      sender: 'Allison Trabucco',
-      time: '4 hrs ago',
-      subject: 'Free money',
-      message:
-          'You\'ve been selected as a winner in our latest raffle! To claim your prize, click on the link.',
-      // avatar: '$_avatarsLocation/avatar_3.jpg',
-      // recipients: 'Jeff',
-      containsPictures: true,
-     hotelimage: [],
-    ),
-  };
-
-  static final _drafts = <Email>{
-    const Email(
-      sender: 'Sandra Adams',
-      time: '2 hrs ago',
-      subject: '(No subject)',
-      message: 'Hey,\n\n'
-          'Wanted to email and see what you thought of',
-      // avatar: '$_avatarsLocation/avatar_2.jpg',
-      // recipients: 'Jeff',
-      containsPictures: true,
-     hotelimage: [],
-    ),
-  };
-
   int _currentlySelectedEmailId = -1;
-  String _currentlySelectedInbox = 'Inbox';
+  String _currentlySelectedInbox = 'Home';
   bool _onCompose = false;
   bool _bottomDrawerVisible = false;
   ThemeMode _currentTheme = ThemeMode.system;
@@ -228,9 +172,9 @@ class EmailStore with ChangeNotifier {
     var alreadyStarred = isEmailStarred(email);
 
     if (alreadyStarred) {
-      _categories['Starred']!.remove(email);
+      _categories['Favorites']!.remove(email);
     } else {
-      _categories['Starred']!.add(email);
+      _categories['Favorites']!.add(email);
     }
 
     notifyListeners();
@@ -245,7 +189,7 @@ class EmailStore with ChangeNotifier {
   SlowMotionSpeedSetting get slowMotionSpeed => _currentSlowMotionSpeed;
 
   bool isEmailStarred(Email email) {
-    return _categories['Starred']!.contains(email);
+    return _categories['Favorites']!.contains(email);
   }
 
   set bottomDrawerVisible(bool value) {
