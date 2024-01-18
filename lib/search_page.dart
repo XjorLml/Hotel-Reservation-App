@@ -50,26 +50,21 @@ class SearchPage extends StatelessWidget {
                     children: const [
                       _SectionHeader(title: 'YESTERDAY'),
                       _SearchHistoryTile(
-                        search: '481 Van Brunt Street',
-                        address: 'Brooklyn, NY',
-                      ),
-                      _SearchHistoryTile(
-                        icon: Icons.home,
-                        search: 'Home',
-                        address: '199 Pacific Street, Brooklyn, NY',
+                        search: "Shangri-La's Boracay Resort and Spa",
+                        address: 'Boracay Island, Malay, Aklan',
                       ),
                       _SectionHeader(title: 'THIS WEEK'),
                       _SearchHistoryTile(
-                        search: 'BEP GA',
-                        address: 'Forsyth Street, New York, NY',
+                        search: 'Amanpulo',
+                        address: 'Pamalican Island, Palawan',
                       ),
                       _SearchHistoryTile(
-                        search: 'Sushi Nakazawa',
-                        address: 'Commerce Street, New York, NY',
+                        search: 'The Peninsula Manila',
+                        address: 'Ayala Avenue, Makati City',
                       ),
                       _SearchHistoryTile(
-                        search: 'IFC Center',
-                        address: '6th Avenue, New York, NY',
+                        search: "El Nido Resorts - Pangulasian Island",
+                        address: 'Pangulasian Island, Palawan',
                       ),
                     ],
                   ),

@@ -10,10 +10,7 @@ class EmailStore with ChangeNotifier {
   final _categories = <String, Set<Email>>{
     'Home': _mainInbox,
     'Favorites': _starredInbox,
-    //'Sent': _outbox,
     'Trash': _trash,
-    // 'Spam': _spam,
-    // 'Drafts': _drafts,
   };
 
   static final _mainInbox = <Email>{
@@ -21,8 +18,9 @@ class EmailStore with ChangeNotifier {
       sender: 'Ratings',
       time: '10/10',
       subject: "Shangri-La's Boracay Resort and Spa",
-      message: 'Boracay Island, Malay, Aklan.\n\n'
-          "Nestled on the pristine shores of Boracay's White Beach, Shangri-La's Boracay Resort and Spa epitomizes luxury and natural beauty. Exclusive villas and suites offer breathtaking ocean views. World-class dining, a rejuvenating CHI, The Spa, and a range of water sports create a tropical paradise experience. The serene ambiance and exceptional service make it an ideal haven.",
+      message: 'Boracay Island, Malay, Aklan\n\n'
+          "Nestled on the pristine shores of Boracay's White Beach, Shangri-La's Boracay Resort and Spa epitomizes luxury and natural beauty. Exclusive villas and suites offer breathtaking ocean views. \n\n"
+          "World-class dining, a rejuvenating CHI, The Spa, and a range of water sports create a tropical paradise experience. The serene ambiance and exceptional service make it an ideal haven.",
       // avatar: '$_avatarsLocation/avatar_express.png',
       // recipients: 'Jeff',
       containsPictures: true,
@@ -40,10 +38,10 @@ class EmailStore with ChangeNotifier {
     ),
     const Email(
       sender: 'Ratings',
-      time: '9/10',
+      time: '9.5/10',
       subject: 'Amanpulo',
       message: 'Pamalican Island, Palawan\n\n'
-          "Amanpulo stands as a secluded masterpiece on Palawan's Pamalican Island. Luxurious casitas and villas provide privacy and awe-inspiring views of the Sulu Sea. Amanpulo offers an unparalleled escape with a private white-sand beach, world-class spa treatments, and exquisite dining experiences, ensuring a truly rejuvenating retreat.",
+          "Amanpulo stands as a secluded masterpiece in the Province Palawan. Luxurious casitas and villas provide privacy and awe-inspiring views of the Sulu Sea. \n\n Amanpulo offers an unparalleled escape with a private white-sand beach, world-class spa treatments, and exquisite dining experiences, ensuring a truly rejuvenating retreat.",
       // avatar: '$_avatarsLocation/avatar_5.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
@@ -58,10 +56,10 @@ class EmailStore with ChangeNotifier {
     ),
     const Email(
       sender: 'Ratings',
-      time: '8/10',
+      time: '9.5/10',
       subject: 'The Peninsula Manila',
       message: 'Ayala Avenue, Makati City'
-      "Located in the center of Makati City, The Peninsula Manila has set the benchmark for luxury and sophistication for over four decades. Known affectionately as the “Jewel in the Capital’s Crown” for its legendary presence in the heart of the Philippines’ primary business district, it is a luxurious haven of comfort, quality service and fine cuisine, and is as much a favorite with discerning locals as it is with visitors from overseas. For the second year, The Peninsula Manila is awarded the coveted Forbes Travel Guide Five-Star rating – the only hotel in the principal central business districts of Makati and Bonifacio Global City to receive the coveted ranking in the publisher’s annual announcement of the world’s finest luxury hotels.",
+      "Located in the center of Makati City, The Peninsula Manila has set the benchmark for luxury and sophistication for over four decades. Known affectionately as the “Jewel in the Capital’s Crown” for its legendary presence in the heart of the Philippines’ primary business district, it is a luxurious haven of comfort, quality service and fine cuisine, and is as much a favorite with discerning locals as it is with visitors from overseas. \n\n For the second year, The Peninsula Manila is awarded the coveted Forbes Travel Guide Five-Star rating – the only hotel in the principal central business districts of Makati and Bonifacio Global City to receive the coveted ranking in the publisher’s annual announcement of the world’s finest luxury hotels.",
       // avatar: '$_avatarsLocation/avatar_3.jpg',
       // recipients: 'Jeff',
       containsPictures: true,
@@ -76,10 +74,10 @@ class EmailStore with ChangeNotifier {
     ),
     const Email(
       sender: 'Ratings',
-      time: '8/10',
+      time: '9/10',
       subject: 'El Nido Resorts - Pangulasian Island',
       message: 'Pangulasian Island, Palawan\n\n'
-          "Pangulasian Island is El Nido Resorts’ Eco-Luxury island resort in Bacuit Bay, El Nido. The resort is set fronting a pristine beach and against a backdrop of tropical forest. Also known as the “Island of the Sun”, Pangulasian has breathtaking views of both the sunrise and sunset. Frolic in the 750-meter stretch of white sand beach and be amazed by the marine sanctuary right at its doorstep. Discerning guests will be treated to luxurious amenities and impeccable and personalized service at Pangulasian Island. The resort offers a total of 42 deluxe accommodations built with contemporary Filipino and cutting edge “green” design.",
+          "Pangulasian Island is El Nido Resorts’ Eco-Luxury island resort in Bacuit Bay, El Nido. The resort is set fronting a pristine beach and against a backdrop of tropical forest. \n\n\Also known as the “Island of the Sun”, Pangulasian has breathtaking views of both the sunrise and sunset. Frolic in the 750-meter stretch of white sand beach and be amazed by the marine sanctuary right at its doorstep. Discerning guests will be treated to luxurious amenities and impeccable and personalized service at Pangulasian Island. The resort offers a total of 42 deluxe accommodations built with contemporary Filipino and cutting edge “green” design.",
       // avatar: '$_avatarsLocation/avatar_8.jpg',
       // recipients: 'Allison, Kim, Jeff',
       containsPictures: true,
@@ -94,10 +92,11 @@ class EmailStore with ChangeNotifier {
     ),
     const Email(
       sender: 'Ratings',
-      time: '7/10',
+      time: '9/10',
       subject: 'The Bellevue Manila',
       message: ' Alabang, Muntinlupa,\n\n'
-      "You’ll find all you need here at The Bellevue Manila! Go on a gastronomic adventure with fantastic dining options, and work on your wellness with the hotel’s state-of-the-art facilities such as the spa, gym, and swimming pool. With excellent service, spacious and comfortable rooms, and top-notch facilities and amenities, this five-star hotel in Alabang promises a delightful experience for its valued guests.",
+      "You’ll find all you need here at The Bellevue Manila! Go on a gastronomic adventure with fantastic dining options, and work on your wellness with the hotel’s state-of-the-art facilities such as the spa, gym, and swimming pool. \n\n"
+      "With excellent service, spacious and comfortable rooms, and top-notch facilities and amenities, this five-star hotel in Alabang promises a delightful experience for its valued guests.",
       
       // avatar: '$_avatarsLocation/avatar_express.png',
       // recipients: 'Jeff',
@@ -115,32 +114,7 @@ class EmailStore with ChangeNotifier {
 
   static final _starredInbox = <Email>{};
 
-  static final _trash = <Email>{
-    const Email(
-      sender: 'Frank Hawkins',
-      time: '4 hrs ago',
-      subject: 'Your update on the Google Play Store is live!',
-      message:
-          'Your update is now live on the Play Store and available for your alpha users to start testing.\n\n'
-          'Your alpha testers will be automatically notified. If you\'d rather send them a link directly, go to your Google Play Console and follow the instructions for obtaining an open alpha testing link.',
-      // avatar: '$_avatarsLocation/avatar_4.jpg',
-      // recipients: 'Jeff',
-      containsPictures: true,
-     hotelimage: [],
-    ),
-    const Email(
-      sender: 'Allison Trabucco',
-      time: '6 hrs ago',
-      subject: 'Try a free TrailGo account',
-      message:
-          'Looking for the best hiking trails in your area? TrailGo gets you on the path to the outdoors faster than you can pack a sandwich.\n\n'
-          'Whether you\'re an experienced hiker or just looking to get outside for the afternoon, there\'s a segment that suits you.',
-      // avatar: '$_avatarsLocation/avatar_3.jpg',
-      // recipients: 'Jeff',
-      containsPictures: true,
-     hotelimage: [],
-    ),
-  };
+  static final _trash = <Email>{};
 
   int _currentlySelectedEmailId = -1;
   String _currentlySelectedInbox = 'Home';
