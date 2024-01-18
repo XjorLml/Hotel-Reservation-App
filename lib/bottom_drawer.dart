@@ -34,27 +34,27 @@ class BottomDrawer extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           physics: const NeverScrollableScrollPhysics(),
           children: [
-            const SizedBox(height: 28),
+            const SizedBox(height: 11),
             leading,
-            const SizedBox(height: 8),
-            const Divider(
-              color: ReplyColors.blue200,
-              thickness: 0.25,
-              indent: 18,
-              endIndent: 160,
-            ),
-            const SizedBox(height: 16),
-            Padding(
-              padding: const EdgeInsetsDirectional.only(start: 18),
-              child: Text(
-                'FOLDERS',
-                style: theme.textTheme.bodySmall!.copyWith(
-                  color: ReplyColors.white50.withOpacity(0.64),
-                ),
-              ),
-            ),
-            const SizedBox(height: 4),
-            trailing,
+            const SizedBox(height: 1),
+            // const Divider(
+            //   color: ReplyColors.blue200,
+            //   thickness: 0.25,
+            //   indent: 18,
+            //   endIndent: 160,
+            // ),
+            //const SizedBox(height: 5),
+            // Padding(
+            //   padding: const EdgeInsetsDirectional.only(start: 18),
+            //   child: Text(
+            //     'FOLDERS',
+            //     style: theme.textTheme.bodySmall!.copyWith(
+            //       color: ReplyColors.white50.withOpacity(0.64),
+            //     ),
+            //   ),
+            // ),
+            // const SizedBox(height: 4),
+            // trailing,
           ],
         ),
       ),

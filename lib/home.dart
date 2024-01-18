@@ -49,13 +49,11 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
       icon: '$_iconAssetLocation/twotone_star.png',
       index: 1,
     ),
-   
     _Destination(
       name: 'Trash',
       icon: '$_iconAssetLocation/twotone_delete.png',
       index: 3,
     ),
-   
   ];
 
   final _folders = <String, String>{
@@ -303,13 +301,13 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
         dropArrowCurve: _dropArrowCurve,
         toggleBottomDrawerVisibility: _toggleBottomDrawerVisibility,
       ),
-      floatingActionButton: _bottomDrawerVisible
-          ? null
-          : const Padding(
-              padding: EdgeInsetsDirectional.only(bottom: 8),
-              child: _ReplyFab(),
-            ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButton: _bottomDrawerVisible
+      //     ? null
+      //     : const Padding(
+      //         padding: EdgeInsetsDirectional.only(bottom: 8),
+      //         child: _ReplyFab(),
+      //       ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
@@ -374,7 +372,7 @@ class _AnimatedBottomAppBar extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(width: 8),
-                          const _ReplyLogo(),
+                          // const _ReplyLogo(),
                           const SizedBox(width: 10),
 // TODO: Add Fade through transition between disappearing mailbox title (Motion)
                           _FadeThroughTransitionSwitcher(
